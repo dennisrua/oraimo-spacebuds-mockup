@@ -37,6 +37,23 @@ img {
   width: 100%;
 }
 
+video {
+  opacity: 0;
+  transform: translate(100%);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -57,6 +74,10 @@ img {
 
 .navbar .logo {
   font-size: 2rem;
+}
+
+.navbar .logo img {
+  width: 130px;
 }
 
 .navbar .nav {
